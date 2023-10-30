@@ -1,0 +1,28 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+    <title>Numero</title>
+
+    <style>
+      .button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #0074d9; /* Cambia el color de fondo según tus preferencias */
+        color: #fff;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+  <h1 th:text="${respuesta}"></h1>
+  <h2 th:text="${intentos}"></h2>
+
+  <a href="index.html" class="button">Volver</a>
+  </body>
+
+  </html>
