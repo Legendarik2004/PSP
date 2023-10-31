@@ -61,19 +61,21 @@ public class JuegoAdivinarNumeroServlet extends HttpServlet {
                     numerosUsados.clear();
                 } else {
                     if (numerosUsados.contains(numero)) {
-                        mensajeRespuesta = Constantes.NUMERO_USADO + randomNum;
+                        mensajeRespuesta = Constantes.NUMERO_USADO;
                     } else {
                         contador--;
                         if (numero > randomNum) {
-                            mensajeRespuesta = Constantes.NUMERO_MUY_ALTO + randomNum;
+                            mensajeRespuesta = Constantes.NUMERO_MUY_ALTO;
                         } else {
-                            mensajeRespuesta = Constantes.NUMERO_MUY_BAJO + randomNum;
+                            mensajeRespuesta = Constantes.NUMERO_MUY_BAJO;
                         }
                         numerosUsados.add(numero);
                     }
                     mensajeIntentos = contador + Constantes.INTENTOS_RESTANTES;
                     context.setVariable(Constantes.INTENTOS, mensajeIntentos);
                 }
+                //PARA PRUEBAS descomentar
+                //mensajeRespuesta = mensajeRespuesta + randomNum;
             }
             context.setVariable(Constantes.RESPUESTA, mensajeRespuesta);
 

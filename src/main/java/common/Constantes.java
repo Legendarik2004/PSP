@@ -10,8 +10,8 @@ public class Constantes {
 
     //Respuestas
     public static final String SIN_INTENTOS = "Eres un poco inutil, te doy otra oportunidad venga";
-    public static final String ACIERTO = "Ya era hora";
-    public static final String NUMERO_USADO = "QUE NO REPITAS PESAO";
+    public static final String ACIERTO = "Ya era hora ";
+    public static final String NUMERO_USADO = "QUE NO REPITAS PESAO ";
     public static final String NUMERO_MUY_ALTO = "Te has venido muy arriba ";
     public static final String NUMERO_MUY_BAJO = "Tan bajo que parece la nota de esta practica ";
     public static final String CASILLA_NUM_VACIA = "Pero pon algo";
